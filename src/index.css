@@ -1,0 +1,140 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.navlink .link{
+  color: #000;
+}
+.navlink :hover{
+    color: whitesmoke;
+}
+.nav{
+  background-color: #a0c77d32;
+  border-radius: 0 0 30px 40px;
+  transition: background-color 0.4s ease-in-out;
+  max-width: 70%;
+  margin: auto !important;
+}
+.hover-shadow:hover {
+  box-shadow: 35px -35px 17px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 35px -35px 17px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 35px -35px 17px 0px rgba(0,0,0,0.5);
+  transition: box-shadow 0.4s ease-in-out;
+  scale: 1.1;
+}
+
+ .btn-cv{
+    background-color: transparent;
+    color: black;
+    border: 1px solid #752a92;
+    border-radius:5px;
+    font-size: 12px;
+    letter-spacing:2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .5s;
+  }
+  .scrolled {
+    position: absolute !important;
+    transition: top 0.8s ease-out;
+    top: -20px;
+ }
+  
+ .btn-cv:hover {
+    color: #e5c5f1;
+    background-color: #db3eb1;
+    filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+  }
+  .banner{
+    background-image: url('assets/cover.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .Footer {
+    padding: 2rem 0;
+    margin-top: 15rem;
+    border-top: 3px solid black;
+  }
+  
+  .ft-1 h3 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+  }
+  
+  .ft-1 span {
+    color: #fa87ce;
+  }
+  
+  .ft-1 p {
+    padding: 0rem 5rem 0.8rem 0;
+    font-weight: 500;
+    color: #1b2932;
+  }
+  
+  .footer-icons i {
+    padding: 0.4rem 0.5rem;
+    background: #f9cce7;
+    color: #87cefa;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .footer-icons i:hover {
+    background: #cefa87;
+    color: #2b4250;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  
+  .Footer h5 {
+    color: #2b4250;
+  }
+  
+  .ft-2 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .ft-2 ul li {
+    padding: 0.35rem 0;
+    font-weight: 500;
+  }
+  
+  .ft-2 ul a {
+    text-decoration: none;
+    color: #1b2932;
+    font-size: 1.06rem;
+  }
+  
+  .ft-3 p {
+    font-weight: 500;
+    padding: 0.1rem 0;
+    font-size: 1.06rem;
+  }
+  
+  .ft-3 i {
+    padding-right: 0.5rem;
+  }
+  
+  .Last-footer {
+    background: #87cefa;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .Last-footer p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+  .rowed:hover{
+    background-color: #87d9fa;
+    color: whitesmoke;
+    transition: background-color 0.4s ease-in-out;
+  }
