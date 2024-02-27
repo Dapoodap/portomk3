@@ -48,14 +48,16 @@ function Previewme() {
               <Card className="p-4" style={{ maxWidth: '400px', boxShadow: 'rgb(0, 0, 0) -9px 13px 0px, rgba(0, 0, 0, 0.44) -14px 20px 0px' }}>
                 <Card.Body>
                   <Card.Text>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis cum molestiae omnis quibusdam ratione dolorum fugit error, facere alias! Dolor optio quod praesentium eos minus quisquam ratione culpa sequi facere.</p>
-                    <br />
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis cum molestiae omnis quibusdam ratione dolorum fugit error, facere alias! Dolor optio quod praesentium eos minus quisquam ratione culpa sequi facere.</p>
-                    <br />
-                    <p>Lorem ipsum, ere.</p>
+                    <p
+                    style={{ fontSize:'16px',fontWeight:'400' }}
+                    >Passionate about problem-solving through technology, I thrive on collaborative teamwork to innovate solutions. Engaging in discussions and collective problem-solving sessions fosters creativity and ensures effective issue resolution..</p>
+                    {/* <br /> */}
+                    <p
+                    style={{ fontSize:'16px',fontWeight:'400' }}
+                    >As a proficient full-stack developer specializing in MERN, I focus on transforming design concepts into functional, responsive web applications. With extensive experience, I efficiently deliver tailored solutions that meet specific project requirements.</p>
                   </Card.Text>
                 </Card.Body>
-                <Button style={{ maxWidth: '50%' }}>Explore Me</Button>
+                <a href="/about"><Button style={{ maxWidth: '50%' }}>Explore Me</Button></a>
               </Card>
             </motion.div>
           </Col>

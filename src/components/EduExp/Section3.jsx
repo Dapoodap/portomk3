@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {Button, Card, Container, Modal, Row } from "react-bootstrap";
 import edu from "../../assets/edu.png";
+import certif from "../../assets/certificate.png";
 import dicoce from "../../assets/cedico.jpg";
 import coursera from "../../assets/coursera.jpg";
 import bangkit from "../../assets/bangkit.png";
@@ -11,9 +12,12 @@ import toef from "../../assets/toef.jpg";
 import uiux from "../../assets/uiux.png";
 import webdico from "../../assets/webdico.jpg";
 import webskil from "../../assets/webskil.png";
+import { easeInOut, motion } from "framer-motion";
+
 
 
 function MyVerticallyCenteredModal(props) {
+ 
   const {data} = props;
   console.log(data)
   return (
@@ -42,7 +46,7 @@ function MyVerticallyCenteredModal(props) {
                 <h3>{data?.title}</h3>
               </Card.Title>
               <Card.Text>
-                <p>{data?.desc}</p>
+                <p>{data?.descModal}</p>
               </Card.Text>
             </Card.Body>
             </Card>
@@ -55,17 +59,31 @@ function MyVerticallyCenteredModal(props) {
 }
 
 function Section3() {
+  const fadeinandout = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 1.5, ease: easeInOut } },
+  };
+  const card = {
+    initial: { y:-100 },
+    animate:(index)=>({
+      y:0,
+      transition:{
+        duration: 1.5,
+        delay: 0.1 * index,
+      },
+    }),
+  };
   const Certification = [
-    {"title": "Menjadi Cloud Engineer By Dicoding","img":dicoce,"desc" : "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa"},
-    {"title": "Bit And Byte Of Computer Networking By Coursera", "img" : coursera ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "Pemograman Web Pemula By Dicoding", "img" : webdico ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "Git and Github Basic By Dicoding", "img" : gitdico ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "TOEFL PBT", "img" : toef ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "Bangkit Completion By Google, GOTO, Traveloka, and Kampus Merdeka", "img" : bangkit ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "UI/UX Design Mastery (Gold) By Silvul", "img" : uiux ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "Web Development By Skilvul", "img" : webskil ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "MSIB 2022 Completion By Kampus Merdeka", "img" : skilvul ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"},
-    {"title": "Capstone Product Innovation Challenge Completion By Greenpeace and Skilvul", "img" : greenpeacecaps ,"desc" : "The Bit And Byte Of Computer Networking is the bla ablaaa"}  
+    {"title": "Menjadi Cloud Engineer By Dicoding","img":dicoce,"desc" : "The Cloud Engineer By Dicoding is a course from bangkit program which...","descModal":"The Cloud Engineer By Dicoding is a course from bangkit program which learn about how manage cloud project in Google Cloud Platform (GCP). This course is mandatory and really impactfull for the capstone later"},
+    {"title": "Bit And Byte Of Computer Networking By Coursera", "img" : coursera ,"desc" : "The Bit And Byte Of Computer Networking is course from bangkit...","descModal":"The Bit And Byte Of Computer Networking is course from bangkit program which learn about how computer work from inside layer. Also in this course learn how to be sysadmin in computer perception."},
+    {"title": "Pemograman Web Pemula By Dicoding", "img" : webdico ,"desc" : "This is the first course from bangkit which for...","descModal":"This is the first course from bangkit which for cohort can manage how web are work especially inside of it for the basic"},
+    {"title": "Git and Github Basic By Dicoding", "img" : gitdico ,"desc" : "This is the first course from bangkit which for...","descModal":"This is the first course from bangkit which for cohort can manage how version control system is working and how to manage work as a team for the capstone later"},
+    {"title": "TOEFL PBT", "img" : toef ,"desc" : "This is one of the mandataory course from my college before i could take thesis defence...","descModal":"This is one of the mandataory course from my college before i could take the thesis defence in my 7ths semester"},
+    {"title": "Bangkit Completion By Google, GOTO, Traveloka", "img" : bangkit ,"desc" : "This was my certificate after im completing bangkit program...","descModal":"This was my certificate after im completing all of the mandatory and non mandatory activities in bangkit program 2023. Im finished with final score arround 95"},
+    {"title": "UI/UX Design Mastery (Gold) By Silvul", "img" : uiux ,"desc" : "This is the first course from skilvul in program...","descModal":"This is the first course from skilvul in program skilvul:tech4Impact which need to finish this course before going into product development phase"},
+    {"title": "Web Development By Skilvul", "img" : webskil ,"desc" : "This is also the first course from skilvul which for participant in skilvul:tech4Impact...","descModal":"This is also the first course from skilvul which for participant in skilvul:tech4Impact before they goin into react development in the next phase"},
+    {"title": "MSIB 2022 Completion By Kampus Merdeka", "img" : skilvul ,"desc" : "This was my certificate after im completing mbkm program...","descModal":"This was my certificate after im completing all of the mandatory and non mandatory activities in mbkm program with skilvul in 2022. Im finished with final score arround 90"},
+    {"title": "Capstone Product Innovation Challenge Completion By Greenpeace and Skilvul", "img" : greenpeacecaps ,"desc" :  "This was my certificate after im finished my capstone for Greenpeace...","descModal":"This was my certificate after im finished my capstone for Greenpeace in skilvul:tech4impact program. The capstone that i built was a website for supporting local green activities for their campaign"}, 
   ]
   const [modalShow, setModalShow] = useState(false);
   const [selectedCertification, setSelectedCertification] = useState(null); // State to store the selected certification data
@@ -86,10 +104,17 @@ function Section3() {
           justifyContent: "space-between",
         }}
       >
-        <div>
-          <img src={edu} width={50} alt="" />
-          <h2>Certification</h2>
-        </div>
+        <motion.div
+        variants={fadeinandout}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ 
+          once:true
+         }}
+        >
+          <img src={certif} width={60} alt="" />
+          <h2>Certificate</h2>
+        </motion.div>
       </Row>
       <Row
         className="my-5 p-2"
@@ -100,7 +125,13 @@ function Section3() {
           justifyContent: "space-between",
         }}
       >
-        <div
+        <motion.div
+        variants={fadeinandout}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ 
+          once:true
+         }}
           style={{
             display: "flex",
             justifyContent: "center",
@@ -142,7 +173,15 @@ function Section3() {
             </Card.Body>
           </Card> */}
           {Certification.map((item, index) => (
-  <div key={index} style={{ width: '20rem', marginBottom: '20px' }}>
+  <motion.div
+  variants={card}
+  initial="initial"
+  whileInView="animate"
+  viewport={{ 
+    once:true
+   }}
+   custom={index}
+   key={index} style={{ width: '20rem', marginBottom: '20px' }}>
     <Card
       onClick={() => clickCertif(item)}
       className="p-0"
@@ -169,11 +208,11 @@ function Section3() {
       show={modalShow}
       onHide={() => setModalShow(false)}
     />
-  </div>
+  </motion.div>
 ))}
 
           
-        </div>
+        </motion.div>
       </Row>
       
     </Container>

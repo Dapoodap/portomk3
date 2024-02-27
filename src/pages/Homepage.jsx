@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -7,23 +6,13 @@ import Previewme from '../components/Homepage/Previewme';
 import CardSkill from '../components/Homepage/CardSkill';
 import Quotes from '../components/Homepage/Quotes';
 import vidback from '../assets/vidback.mp4';
+import { useEffect } from 'react';
 
 function Homepage() {
-  
-  const colors = ['#001eff', '#f000ff', '#ffe700', '#37013a']; // Warna yang akan digunakan
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((index + 1) % colors.length);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [index]);
   
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
-
   return (
     <>
       <Navigation />

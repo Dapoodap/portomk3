@@ -13,7 +13,7 @@ function Section1() {
         }}
       >
         <div>
-          <h1>Where did I Learn and Other</h1>
+          <h1 style={{ fontSize:'70px',fontWeight:'500',letterSpacing:'2px',wordSpacing:'2px',fontFamily:'"Bevan", serif' }}>Where did I Learn and Other</h1>
         </div>
       </Container>
   )

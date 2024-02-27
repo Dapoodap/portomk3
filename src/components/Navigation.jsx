@@ -69,7 +69,7 @@ function Navigation() {
                   <Nav.Link className="navlink" style={{ fontSize: '20px', fontWeight: '500', letterSpacing: '2px' }}><Link className='link' style={{ textDecoration: 'none'}} to={'/eduexp'}>Education and Experience</Link></Nav.Link>
                   <Nav.Link className="navlink" style={{ fontSize: '20px', fontWeight: '500', letterSpacing: '2px' }}><Link className='link' style={{ textDecoration: 'none'}} to={'/porto'}>Portofolio and Project</Link></Nav.Link>
                 </Nav>
-                <Button className="btn-cv">Download My CV</Button>
+                <a href="https://drive.google.com/drive/folders/1ItWNgmq3qskziO_sOfONKXDeOqaTEZLB?usp=drive_link" target="_blank"><Button className="btn-cv">Download My CV</Button></a>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

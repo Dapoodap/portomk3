@@ -8,23 +8,23 @@ const Footer = () => {
                             <h3><span>Daffa</span> Radhitya</h3>
                             <p className="my-2 py-2">Feels free to email me for ask something or try to connect with me. I'm also open for feedback and suggestion. So dont mind to hit me up</p>
                             <div className="footer-icons my-2">
-                                <i className="fa-brands fa-github" style={{ marginLeft:'0' }}></i>
+                                <a href="https://github.com/Dapoodap" target="_blank"><i className="fa-brands fa-github" style={{ marginLeft:'0' }}></i></a>
                                 <i className="fa-brands fa-twitter"></i>
                                 <i className="fa-brands fa-instagram"></i>
-                                <i className="fa-brands fa-linkedin-in"></i>
+                                <a href="https://www.linkedin.com/in/daffapwp/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3 col-12 ft-2">
                             <h5>Quick Links</h5>
                             <ul>
                                 <li className="nav-item">
-                                    <a className="" href="/">About</a>
+                                    <a className="" href="/about">About</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="" href="/">Education & Experience</a>
+                                    <a className="" href="/eduexp">Education & Experience</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="" href="/">Portofolio</a>
+                                    <a className="" href="/porto">Portofolio</a>
                                 </li>
                             </ul>
                         </div>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='Last-footer'>
-                <p>Copyright@DaffaRadhitya2024</p>
+                <p>Copyright@DaffaRadhitya2023</p>
             </div>
         </>
     )

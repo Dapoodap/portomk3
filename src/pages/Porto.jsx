@@ -13,11 +13,27 @@ import pali from "../assets/pali.png";
 import bmi from "../assets/bmi.png";
 import wrc from "../assets/wrc.png";
 import docapi from "../assets/docapi.png";
-import { motion } from "framer-motion";
+import poli from "../assets/poli.png";
 import Footer from "../components/Footer";
+import { easeInOut, motion } from "framer-motion";
+import logo from "../assets/projecticon.png"
 
 
 function Porto() {
+  const fadeinandout = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 1.5, ease: easeInOut } },
+  };
+  const card = {
+    initial: { y:-100 },
+    animate:(index)=>({
+      y:0,
+      transition:{
+        duration: 1.5,
+        delay: 0.1 * index,
+      },
+    }),
+  };
     const gotoLink = (item) =>{
         window.open(item,"_blank");
     }
@@ -26,78 +42,85 @@ function Porto() {
       title: "Website Kos Dariz",
       img: kos,
       tools: ["React js", "Express js", "Bostrap", "MySql"],
-      desc: "Kos is Bla Bla Blaa",
+      desc: "Website for kos (Homestay) management system with web based. The website sustain the manager of the kos (Homestay) manage their property easily.",
       link: "https://github.com/Dapoodap/FE_Skripsi",
     },
     {
       title: "Greenish Website",
       img: green,
       tools: ["React js", "Express js", "Redux", "Boostrap", "MongoDB"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
+      desc: "Website for Greenpeace (rebrand: Greenish) for local activist to promote their event. User also can join the event from this website",
       link: "https://github.com/orgs/FEBE13/repositories",
     },
     {
       title: "Fotoin Website",
       img: fotoin,
       tools: ["HTML", "CSS", "Javascript"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "My first project for college. Fotoin is frontend web without any framework inside it just pure html, css, and js for training.",
+      link: "https://github.com/Dapoodap/Joki_Fotoin",
     },
     {
-      title: "Skilmobie Website",
+      title: "Skilmovie Website",
       img: movie,
       tools: ["HTML", "CSS", "Boostrap", "Javascript", "Asyncrhonous"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "Responsive website for movies lover. Using TMDB API, website fetch the movie asynchrnously.",
+      link: "https://github.com/Dapoodap/skilmovieApp",
+    },
+    {
+      title: "Poliklinik Website",
+      img: poli,
+      tools: ["ReactJs", "Boostrap", "Laravel",],
+      desc: "website for polyclinics or health workers such as doctors can make schedules and examine patients who register via the website.",
+      link: "https://github.com/Dapoodap/BK_POLIKLINIK_FE",
     },
     {
       title: "Todolist React",
       img: todo,
       tools: ["React js", "Redux", "Boostrap", "TMDB API"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "TODO List for user can ease managing their life with structured and well organized note. This project implementing redux for state management",
+      link: "https://github.com/Dapoodap/TodoListReact",
     },
     {
       title: "Personal website Mk.1",
       img: personal1,
       tools: ["HTML", "CSS", "Boostrap", "Javascript"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "My first personal website withou any framework and try to make it accessible for everyone.",
+      link: "https://github.com/orgs/FEBE13/PersonalWeb",
     },
     {
-      title: "Personal website Mk.1",
+      title: "Personal website Mk.2",
       img: personal2,
       tools: ["React js", "boostrap"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "My second personal website withou ReactJs. Im improved the features and try make it nice with react boostrap",
+      link: "https://github.com/orgs/FEBE13/personalWeb2",
     },
     {
       title: "Palindrom Generator",
       img: pali,
       tools: ["HTML", "CSS", "Javasript"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "Fun project using implementation of javascript for improving logical and problem solving. This project will detect either the input word is palindrom or not",
+      link: "https://github.com/orgs/FEBE13/PalindromGenerator",
     },
     {
       title: "WRC Landing Page",
       img: wrc,
       tools: ["HTML", "CSS"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "Slicing the landing page for web development pemula in skilvul course without any framework used",
+      link: "https://github.com/orgs/FEBE13/WRC_Landing_Page",
     },
     {
       title: "BMI Calculator",
       img: bmi,
       tools: ["HTML", "CSS"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "Fun project using implementation of javascript for improving logical and problem solving. This project will calculate the user BMI status from their weight and height",
+      link: "https://github.com/orgs/FEBE13/BMIcalculator",
     },
     {
       title: "Restfull API For BAtikfy",
       img: docapi,
       tools: ["Expressjs", "MySql", "JWT"],
-      desc: "The Cloud Engineer By Dicoding is a Cloud Engineer Certificate Bla Bla Blaa",
-      link: "https://github.com/orgs/FEBE13/repositories",
+      desc: "Made restAPI and documented the API for Batikfy application. Batikfy is me and my team capstone for bangkit program. The application can detect batik pattern with machine learning approach.",
+      link: "https://github.com/orgs/BATIKFY/repositories",
     },
   ];
   return (
@@ -105,10 +128,17 @@ function Porto() {
       <Navigation />
       <Section1 />
       <Container className="my-4">
-        <div className="my-2" style={{ maxWidth: "90%", margin: "auto" }}>
-          <img src={edu} width={50} alt="" />
+        <motion.div
+        variants={fadeinandout}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ 
+          once:true
+         }}
+        className="my-2" style={{ maxWidth: "90%", margin: "auto" }}>
+          <img src={logo} width={60} alt="" />
           <h2>My Project</h2>
-        </div>
+        </motion.div>
         <Row xs={1} md={2} lg={3} className="g-4 my-4">
           {project.map((item, index) => (
             <Col key={index}>
@@ -120,6 +150,13 @@ function Porto() {
                 }}
                 whileHover={{ boxShadow: "0px 0px 0px rgba(0,0,0,0)" }}
                 transition={{ duration: 0.3 }}
+                variants={card}
+  initial="initial"
+  whileInView="animate"
+  viewport={{ 
+    once:true
+   }}
+   custom={index}
                 onClick={() => {
                   gotoLink(item.link);
                 }}
@@ -152,8 +189,7 @@ function Porto() {
                       ))}
                     </div>
                     <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      {item.desc}
                     </Card.Text>
                   </Card.Body>
                 </Card>

@@ -17,8 +17,18 @@ import song from "../../assets/song.jpg";
 import movie from "../../assets/movie.jpg";
 import valo from "../../assets/valo.jpg";
 import gold from "../../assets/gold.png";
+import { easeInOut, motion } from 'framer-motion';
+
 
 function Section1() {
+  const fadeinandouticon ={
+    initial: { opacity: 0},
+    animate: { opacity:1,transition:{duration:1.5,ease:easeInOut}},
+  }
+  const logo ={
+    initial: { y:-100},
+    animate: { y:0,transition:{duration:1.5,ease:easeInOut}},
+  }
   return (
     <>
       <Container
@@ -32,13 +42,22 @@ function Section1() {
         }}
       >
         <div>
-          <h1>Get To Know Me</h1>
+          <h1
+          style={{ fontSize:'70px',fontWeight:'500',letterSpacing:'2px',wordSpacing:'2px',fontFamily:'"Bevan", serif' }}
+          >Get To Know Me</h1>
         </div>
       </Container>
       <Container className="my-4">
         <Row>
           <Col md={6} sm={12} className="mx-auto p-3">
-            <div>
+            <motion.div
+            variants={fadeinandouticon}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ 
+              once:true
+             }}
+            ><div>
               <img className="my-3" src={boy} width={50} alt="" />
             </div>
             <div
@@ -48,7 +67,9 @@ function Section1() {
                 letterSpacing: "1px",
               }}
             >
-              <h1>About Me</h1>
+              <h1
+              style={{ fontSize:'40px',fontWeight:'500',letterSpacing:'2px' }}
+              >About Me</h1>
               <p>
                 I'm a student of computer science with informathics engineering
                 major at Dian Nuswantoro University Semarang. I'm in my 5th
@@ -65,35 +86,55 @@ function Section1() {
                 like mixing tech with art to create not only functional but
                 visually appealing projects
               </p>
-            </div>
+            </div></motion.div>
+              
+            
           </Col>
         </Row>
       </Container>
       <Container className="my-4">
         <Row>
           <Col md={6} sm={12} className="mx-auto p-3">
-            <div
+            <motion.div
+            variants={fadeinandouticon}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ 
+              once:true
+             }}
               style={{
                 textAlign: "justify",
                 lineHeight: "25px",
                 letterSpacing: "1px",
               }}
             >
-              <h1>Why i make this...</h1>
+              <h1
+              style={{ fontSize:'40px',fontWeight:'500',letterSpacing:'2px' }}
+              >Why i make this...</h1>
               <p>
                 I made this website for branding myself and find new friends
                 with same enthushiast in frontend things. Also helping some
                 other peoples who needs my help 😉
               </p>
-            </div>
+            </motion.div>
           </Col>
         </Row>
       </Container>
       <Container className="my-4">
         <Row>
           <Col md={6} sm={12} className="mx-auto p-3">
-            <div>
-              <h1>Tools i usually used</h1>
+            <motion.div
+            variants={fadeinandouticon}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ 
+              once:true
+             }}
+            >
+<div>
+              <h1
+              style={{ fontSize:'40px',fontWeight:'500',letterSpacing:'2px' }}
+              >Tools i usually used</h1>
             </div>
             <div
               style={{
@@ -115,6 +156,8 @@ function Section1() {
               <img className="my-3" src={mongo} width={80} alt="" />
               <img className="my-3" src={mysql} width={80} alt="" />
             </div>
+            </motion.div>
+            
           </Col>
         </Row>
       </Container>
@@ -144,8 +187,15 @@ function Section1() {
         </Row>
       </Container>
       <Container className="my-4 d-flex justify-content-center">
-        <div style={{textAlign: "center" }}>
-          <h1 className="text-start">Lately</h1>
+        <motion.div
+        variants={fadeinandouticon}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ 
+          once:true
+         }}
+        style={{textAlign: "center" }}>
+          <h1 style={{ fontSize:'40px',fontWeight:'500',letterSpacing:'2px' }} className="text-start">Lately</h1>
           <Row className="justify-content-center">
             <Col xs={12} md={6} lg={6} className="my-3">
               <Card
@@ -259,7 +309,7 @@ function Section1() {
               </Card>
             </Col>
           </Row>
-        </div>
+        </motion.div>
       </Container>
     </>
   );
