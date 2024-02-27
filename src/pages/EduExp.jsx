@@ -10,13 +10,13 @@ function EduExp() {
     window.scrollTo(0, 0);
   },[])
   return (
-    <>
+    <div style={{ overflow:'hidden' }}>
     <Navigation/>
     <Section1/>
     <Section2/>
     <Section3/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

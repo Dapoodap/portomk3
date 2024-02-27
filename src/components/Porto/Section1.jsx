@@ -34,7 +34,7 @@ function Section1() {
           once:true
          }}
         >
-          <h1 style={{ fontSize:'70px',fontWeight:'500',letterSpacing:'2px',wordSpacing:'2px',fontFamily:'"Bevan", serif' }}>My Portofolio</h1>
+          <h1 style={{ fontSize:'30px',fontWeight:'500',letterSpacing:'2px',wordSpacing:'2px',fontFamily:'"Bevan", serif' }}>My Portofolio</h1>
         </motion.div>
       </Container>
   )

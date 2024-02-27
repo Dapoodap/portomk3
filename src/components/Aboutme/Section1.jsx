@@ -43,7 +43,7 @@ function Section1() {
       >
         <div>
           <h1
-          style={{ fontSize:'70px',fontWeight:'500',letterSpacing:'2px',wordSpacing:'2px',fontFamily:'"Bevan", serif' }}
+          style={{ fontSize:'50px',fontWeight:'500',letterSpacing:'2px',wordSpacing:'2px',fontFamily:'"Bevan", serif' }}
           >Get To Know Me</h1>
         </div>
       </Container>
@@ -71,20 +71,19 @@ function Section1() {
               style={{ fontSize:'40px',fontWeight:'500',letterSpacing:'2px' }}
               >About Me</h1>
               <p>
-                I'm a student of computer science with informathics engineering
-                major at Dian Nuswantoro University Semarang. I'm in my 5th
-                semester right now. I'm also active in my uni's organization
+                I'm a fresh graduate from computer science with informathics engineering
+                major at Dian Nuswantoro University Semarang. I'm finishing my 3,5 year study in last January 2024. I was also active in my uni's organization
                 such as DNCC (Dian Nuswantoro Computer Club) and MPM-KM Dian
                 Nuswantoro. i'm so passionate and so enthusiast with tech field
-                that's why im try to always learn and learn so i become good in
-                it.
+                that's why im try to always learn and learn so i wanna become good in
+                this field.
               </p>
               <p>
-                I'm focusing myself as a frontend developer since my second year
+                I'm focusing myself as a fullstack developer since my second year
                 and start learning product development, UI/UX, website and
-                mobile client side. As a frontend developer I create stuff and
+                mobile client side, building and manage restAPI and also Cloud Computing. As a frontend developer I create stuff and
                 like mixing tech with art to create not only functional but
-                visually appealing projects
+                visually appealing projects. In backend side im really into making backend service as the requirement ask.
               </p>
             </div></motion.div>
               

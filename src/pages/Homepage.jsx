@@ -14,7 +14,7 @@ function Homepage() {
     window.scrollTo(0, 0);
   },[])
   return (
-    <>
+    <div style={{ overflow:'hidden' }}>
       <Navigation />
       <Banner/>
       <Previewme/>
@@ -28,7 +28,7 @@ function Homepage() {
         </div>
       </Container>
       <Footer/>
-    </>
+    </div>
   );
 }
 

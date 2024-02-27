@@ -17,10 +17,12 @@ import poli from "../assets/poli.png";
 import Footer from "../components/Footer";
 import { easeInOut, motion } from "framer-motion";
 import logo from "../assets/projecticon.png"
+import { useEffect } from "react";
 
 
 function Porto() {
   const fadeinandout = {
+    
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { duration: 1.5, ease: easeInOut } },
   };
@@ -123,6 +125,9 @@ function Porto() {
       link: "https://github.com/orgs/BATIKFY/repositories",
     },
   ];
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
       <Navigation />
