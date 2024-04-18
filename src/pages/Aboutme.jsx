@@ -31,8 +31,8 @@ function Aboutme() {
   },[])
   return (
     <div style={{ position: 'relative',overflow:'hidden' }}>
-      <img id="blob1" style={{ position: 'absolute', zIndex: '-1', top: '20%', left: '5%' }} src={blob} alt="" />
-      <img id="blob2" style={{ position: 'absolute', zIndex: '-1', bottom: '20%', right: '5%' }} src={blob2} alt="" />
+      <img loading='lazy' id="blob1" style={{ position: 'absolute', zIndex: '-1', top: '20%', left: '5%' }} src={blob} alt="" />
+      <img loading='lazy' id="blob2" style={{ position: 'absolute', zIndex: '-1', bottom: '20%', right: '5%' }} src={blob2} alt="" />
       <Navigation />
       <Section1 />
       <Footer />

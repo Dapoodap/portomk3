@@ -40,7 +40,7 @@ function MyVerticallyCenteredModal(props) {
               cursor:'pointer',
             }}
           >
-            <Card.Img variant="top" src={data?.img} />
+            <Card.Img loading="lazy" variant="top" src={data?.img} />
             <Card.Body>
               <Card.Title>
                 <h3>{data?.title}</h3>
@@ -112,7 +112,7 @@ function Section3() {
           once:true
          }}
         >
-          <img src={certif} width={60} alt="" />
+          <img loading="lazy" src={certif} width={60} alt="" />
           <h2>Certificate</h2>
         </motion.div>
       </Row>
@@ -193,7 +193,7 @@ function Section3() {
         cursor: 'pointer',
       }}
     >
-      <Card.Img variant="top" src={item.img} style={{ maxHeight: '200px', objectFit: 'cover' }} />
+      <Card.Img loading="lazy" variant="top" src={item.img} style={{ maxHeight: '200px', objectFit: 'cover' }} />
       <Card.Body style={{ width: '100%' }}>
         <Card.Title>
           <p>{item.title}</p>

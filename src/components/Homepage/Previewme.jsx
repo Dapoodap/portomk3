@@ -33,7 +33,7 @@ function Previewme() {
             once:true
            }} 
             className="image d-flex justify-content-center align-items-center" style={{ height: '100vh', margin: '0' }}>
-              <img src={me} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} alt="" className="img-fluid" />
+              <img loading='lazy' src={me} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} alt="" className="img-fluid" />
             </motion.div>
           </Col>
           <Col md={6} style={{ backgroundColor: '#87CEFA' }}>

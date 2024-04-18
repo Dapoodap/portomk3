@@ -58,7 +58,7 @@ function Section1() {
               once:true
              }}
             ><div>
-              <img className="my-3" src={boy} width={50} alt="" />
+              <img loading='lazy' className="my-3" src={boy} width={50} alt="" />
             </div>
             <div
               style={{
@@ -145,15 +145,15 @@ function Section1() {
                 flexWrap: "wrap",
               }}
             >
-              <img className="my-3" src={js} width={80} alt="" />
-              <img className="my-3" src={php} width={80} alt="" />
-              <img className="my-3" src={github} width={80} alt="" />
-              <img className="my-3" src={nodejs} width={80} alt="" />
-              <img className="my-3" src={reactjs} width={80} alt="" />
-              <img className="my-3" src={express} width={80} alt="" />
-              <img className="my-3" src={boost} width={80} alt="" />
-              <img className="my-3" src={mongo} width={80} alt="" />
-              <img className="my-3" src={mysql} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={js} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={php} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={github} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={nodejs} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={reactjs} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={express} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={boost} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={mongo} width={80} alt="" />
+              <img loading="lazy" className="my-3" src={mysql} width={80} alt="" />
             </div>
             </motion.div>
             
@@ -202,7 +202,7 @@ function Section1() {
                 style={{ maxWidth: "30rem", width: "100%" }}
               >
                 <Card.Header className="d-flex align-items-end">
-                  <img src={project} width={40} alt="Logo 1" />
+                  <img loading="lazy" src={project} width={40} alt="Logo 1" />
                   <h5 className="mx-3">Lastest Project</h5>
                 </Card.Header>
                 <Card.Body className="d-flex flex-column">
@@ -223,7 +223,7 @@ function Section1() {
                 style={{ maxWidth: "30rem", width: "100%" }}
               >
                 <Card.Header className="d-flex align-items-end">
-                  <img src={spotify} alt="Logo 2" width={40} />
+                  <img loading="lazy" src={spotify} alt="Logo 2" width={40} />
                   <h5 className="mx-3">Now Playing</h5>
                 </Card.Header>
                 <Card.Body className="d-flex flex-column">
@@ -233,7 +233,7 @@ function Section1() {
                       <p>21 Savage</p>
                     </Col>
                     <Col md={6}>
-                      <img
+                      <img loading="lazy"
                         src={song}
                         width={100}
                         alt="Image 2"
@@ -253,7 +253,7 @@ function Section1() {
                 style={{ maxWidth: "30rem", width: "100%" }}
               >
                 <Card.Header className="d-flex align-items-end">
-                  <img src={netflix} width={40} alt="Logo 1" />
+                  <img loading="lazy" src={netflix} width={40} alt="Logo 1" />
                   <h5 className="mx-3">Recently watched</h5>
                 </Card.Header>
                 <Card.Body className="d-flex flex-column">
@@ -263,7 +263,7 @@ function Section1() {
                       <p>&#9733; &#9733; &#9733; &#9733;</p>
                     </Col>
                     <Col md={6}>
-                      <img
+                      <img loading="lazy"
                         src={movie}
                         width={100}
                         alt="Image 2"
@@ -280,14 +280,14 @@ function Section1() {
                 style={{ maxWidth: "30rem", width: "100%" }}
               >
                 <Card.Header className="d-flex align-items-end">
-                  <img src={riot} alt="Logo 2" width={40} />
+                  <img loading="lazy" src={riot} alt="Logo 2" width={40} />
                   <h5 className="mx-3">Recently Played</h5>
                 </Card.Header>
                 <Card.Body className="d-flex flex-column">
                   <Row>
                     <Col md={6}>
                       <h3>Valorant</h3>
-                      <img
+                      <img loading="lazy"
                         src={gold}
                         width={40}
                         alt="Image 2"
@@ -296,7 +296,7 @@ function Section1() {
                       <p>Gold 3</p>
                     </Col>
                     <Col md={6}>
-                      <img
+                      <img loading="lazy"
                         src={valo}
                         width={100}
                         alt="Image 2"

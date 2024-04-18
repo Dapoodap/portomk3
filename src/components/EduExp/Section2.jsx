@@ -30,7 +30,7 @@ function Section2() {
            once:true
           }}
         >
-          <img src={edu} width={50} alt="" />
+          <img loading="lazy" src={edu} width={50} alt="" />
           <h2>Education And Experience</h2>
         </motion.div>
       </Row>

@@ -87,35 +87,35 @@ function Porto() {
       img: personal1,
       tools: ["HTML", "CSS", "Boostrap", "Javascript"],
       desc: "My first personal website withou any framework and try to make it accessible for everyone.",
-      link: "https://github.com/orgs/FEBE13/PersonalWeb",
+      link: "https://github.com/Dapoodap/PersonalWeb",
     },
     {
       title: "Personal website Mk.2",
       img: personal2,
       tools: ["React js", "boostrap"],
       desc: "My second personal website withou ReactJs. Im improved the features and try make it nice with react boostrap",
-      link: "https://github.com/orgs/FEBE13/personalWeb2",
+      link: "https://github.com/Dapoodap/personalWeb2",
     },
     {
       title: "Palindrom Generator",
       img: pali,
       tools: ["HTML", "CSS", "Javasript"],
       desc: "Fun project using implementation of javascript for improving logical and problem solving. This project will detect either the input word is palindrom or not",
-      link: "https://github.com/orgs/FEBE13/PalindromGenerator",
+      link: "https://github.com/Dapoodap/PalindromGenerator",
     },
     {
       title: "WRC Landing Page",
       img: wrc,
       tools: ["HTML", "CSS"],
       desc: "Slicing the landing page for web development pemula in skilvul course without any framework used",
-      link: "https://github.com/orgs/FEBE13/WRC_Landing_Page",
+      link: "https://github.com/Dapoodap/WRC_Landing_Page",
     },
     {
       title: "BMI Calculator",
       img: bmi,
       tools: ["HTML", "CSS"],
       desc: "Fun project using implementation of javascript for improving logical and problem solving. This project will calculate the user BMI status from their weight and height",
-      link: "https://github.com/orgs/FEBE13/BMIcalculator",
+      link: "https://github.com/Dapoodap/BMIcalculator",
     },
     {
       title: "Restfull API For BAtikfy",
@@ -141,7 +141,7 @@ function Porto() {
           once:true
          }}
         className="my-2" style={{ maxWidth: "90%", margin: "auto" }}>
-          <img src={logo} width={60} alt="" />
+          <img loading="lazy" src={logo} width={60} alt="" />
           <h2>My Project</h2>
         </motion.div>
         <Row xs={1} md={2} lg={3} className="g-4 my-4">
@@ -173,7 +173,7 @@ function Porto() {
                     cursor:'pointer'
                   }}
                 >
-                  <Card.Img variant="top" src={item.img} />
+                  <Card.Img loading="lazy" variant="top" src={item.img} />
                   <Card.Body>
                     <Card.Title>
                       <h3>{item.title}</h3>

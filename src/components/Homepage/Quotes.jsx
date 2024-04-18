@@ -9,6 +9,7 @@ function Quotes() {
   return (
     <Container fluid className="p-5" style={{ position: 'relative', minHeight: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#87CEFA',overflow:'hidden'}}>
         <motion.img 
+        loading="lazy"
         variants={animation}
         initial="initial"
         whileInView="animate"
